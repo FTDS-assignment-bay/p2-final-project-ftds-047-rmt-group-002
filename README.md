@@ -102,8 +102,6 @@ Proyek ini menggunakan pendekatan berbasis **Content-Based Filtering** melalui *
 - Integrasi model BERT/Sentence Transformers untuk rekomendasi yang lebih kontekstual dan akurat.
 - Analisis keterampilan otomatis dari CV/resume pengguna untuk mempermudah input skill.
 - Dashboard interaktif untuk visualisasi tren pekerjaan, misal: job demand per industri, skill populer.
-- Pengembangan mobile-friendly UI agar bisa diakses dari smartphone dengan nyaman.
-- Sistem feedback pengguna untuk meningkatkan akurasi rekomendasi (misal thumbs up/down pada rekomendasi pekerjaan).
 - Keamanan & privasi data – implementasi enkripsi dan anonymisasi data pengguna.
 - Multi-language support – menambahkan dukungan bahasa Indonesia atau bahasa lain agar lebih inklusif.
 
