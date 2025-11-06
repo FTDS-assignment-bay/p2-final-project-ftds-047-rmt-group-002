@@ -21,11 +21,10 @@ Coba aplikasi **SkillMatch** secara langsung di browser kamu:
 
 ## 🎯 Problem Background
 
-💡 Banyak pencari kerja memiliki keahlian luar biasa, namun sering kali kesulitan menemukan pekerjaan yang benar-benar sesuai dengan kemampuan mereka. Melalui **SkillMatch**, sistem rekomendasi berbasis AI yang menggunakan NLP dan TF-IDF, pengguna dapat menemukan lowongan yang paling relevan dengan keterampilan mereka.
-Aplikasi ini menjadi penghubung antara skill dan kesempatan, membantu setiap individu menemukan pekerjaan yang sesuai dengan potensinya. 
+💡 Banyak pencari kerja memiliki keahlian luar biasa, namun sering kali kesulitan menemukan pekerjaan yang benar-benar sesuai dengan kemampuan mereka.
+Melalui SkillMatch, sistem rekomendasi berbasis AI yang memanfaatkan Natural Language Processing (NLP) dan TF-IDF, pengguna dapat menemukan lowongan yang paling relevan dengan keterampilan mereka.
 
-🌍 Banyak pencari kerja memiliki kemampuan hebat, tapi sulit menemukan pekerjaan yang benar-benar sesuai.  
-**SkillMatch** hadir sebagai **jembatan antara skill dan opportunity** melalui analisis teks deskripsi pekerjaan dari berbagai industri.
+🌍 SkillMatch hadir sebagai jembatan antara skill dan opportunity, dengan menganalisis deskripsi pekerjaan dari berbagai industri untuk membantu setiap individu menemukan pekerjaan yang sesuai dengan potensinya.
 
 ---
 
