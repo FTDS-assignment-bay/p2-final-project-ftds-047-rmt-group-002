@@ -58,7 +58,7 @@ Dataset berisi kumpulan lowongan pekerjaan hasil scraping dari **LinkedIn**, men
 3. Membersihkan teks (lowercase, contractions, non-letter removal, stopwords removal, lemmatization)  
 4. Mengubah teks menjadi representasi numerik menggunakan **TF-IDF Vectorizer**
 
-> **Note**: data lowongan kerja LinkedIn ini diambil pada tanggal 31 Oktober 2025 hingga 6 November 2025, besar kemungkinan lowongan kerja tersebut sudah tidak menerima pelamar kerja.
+> **Note**: data lowongan kerja LinkedIn ini diambil pada tanggal 31 Oktober 2025 hingga 6 November 2025, besar kemungkinan lowongan kerja tersebut sudah tidak menerima lamaran kerja.
 ---
 
 ## ⚙️ Methodology
