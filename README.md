@@ -44,26 +44,21 @@ Melalui SkillMatch, sistem rekomendasi berbasis AI yang memanfaatkan Natural Lan
 **Deskripsi singkat:**  
 Dataset berisi kumpulan lowongan pekerjaan hasil scraping dari **LinkedIn**, mencakup:  
 
-- Nama perusahaan  
-- Lokasi  
-- Posisi pekerjaan  
-- Deskripsi pekerjaan  
-- URL sumber lowongan  
+| No | Kolom            | Deskripsi                     |
+|----|------------------|-------------------------------|
+| 1  | company_name     | Nama perusahaan               |
+| 2  | job_location     | Domisili Perusahaan/Pekerjaan |
+| 3  | job_title        | Posisi pekerjaan              |
+| 4  | job_description  | Deskripsi pekerjaan           |
+| 5  | job_url          | Tautan ke halaman lowongan    |  
 
-| No | Kolom             | Deskripsi                   |
-|----|-----------------|----------------------------|
-| 1  | company_name     | Nama perusahaan            |
-| 2  | job_location     | Domisili Perusahaan        |
-| 3  | job_title        | Posisi pekerjaan           |
-| 4  | job_description  | Deskripsi pekerjaan        |
-| 5  | job_url          | Tautan ke halaman lowongan |
-
-**Langkah Preprocessing:**  
+**Langkah Cleaning & Preprocessing data:**  
 1. Menghapus duplikat dan nilai kosong  
 2. Menyaring data berbahasa Inggris  
-3. Membersihkan teks (case folding, stopwords removal, lemmatization)  
+3. Membersihkan teks (lowercase, contractions, non-letter removal, stopwords removal, lemmatization)  
 4. Mengubah teks menjadi representasi numerik menggunakan **TF-IDF Vectorizer**
 
+> **Note**: data lowongan kerja LinkedIn ini diambil pada tanggal 31 Oktober 2025 hingga 6 November 2025, besar kemungkinan lowongan kerja tersebut sudah tidak menerima pelamar kerja.
 ---
 
 ## ⚙️ Methodology
@@ -86,15 +81,17 @@ Proyek ini menggunakan pendekatan berbasis **Content-Based Filtering** melalui *
 **💻 Bahasa Pemrograman & Tools:**  
 - Python  
 - Jupyter Notebook  
-- Streamlit (untuk web app)  
+- HuggingFace (untuk web application)  
 
 **📚 Library Utama:**  
-- `pandas`, `numpy` – Manipulasi data  
-- `nltk`, `re`, `string` – Preprocessing teks  
+- `pandas`, `numpy` – Manipulasi data
+- `Selenium` – Web scraping
+- `nltk`, `re`, `contractions` – Preprocessing teks  
 - `scikit-learn` – TF-IDF & Cosine Similarity  
 - `matplotlib`, `seaborn`, `WordCloud` – Visualisasi  
 - `FASTopic` – Topic Clustering  
 - `Great Expectations` – Validasi data
+- `Streamlit` – Membuat web app
 
 ---
 
@@ -111,7 +108,7 @@ Proyek ini menggunakan pendekatan berbasis **Content-Based Filtering** melalui *
 
 - LinkedIn Job Portal – Cek lowongan langsung di [LinkedIn Jobs](https://www.linkedin.com/jobs)  
 - scikit-learn Docs – Panduan TF-IDF & Cosine Similarity di [scikit-learn Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)  
-- Great Expectations – Framework buat validasi data, liat di [Great Expectations Docs](https://docs.greatexpectations.io/docs/home/)  
+- Great Expectations – Framework untuk validasi data, liat di [Great Expectations Docs](https://docs.greatexpectations.io/docs/home/)  
 - FASTopic – Untuk clustering topik pekerjaan, info lengkap di [FASTopic PyPI](https://pypi.org/project/fastopic/) 
 
 ---
@@ -126,7 +123,7 @@ Proyek ini menggunakan pendekatan berbasis **Content-Based Filtering** melalui *
 | Wesley Hakim | [🔗 Connect](https://www.linkedin.com/in/wesley-hakim/) |
 ---
 ## 📝 Berikan Masukan Anda
-Silakan klik tautan berikut:  
+Silakan klik tautan berikut sebagai feedback dari aplikasi SkillMatch:  
 [💬 Isi Formulir Feedback](https://forms.gle/aJnEeBsktNnLJBrL9)  
 
 Terima kasih telah mencoba **SkillMatch**! 😊  
